@@ -5,12 +5,15 @@
 			console.log('function a');
 			console.log('test');
 		}
-
+		a.testMethod = function() {
+			console.log('www');
+		}
 		function b() {
-			console.log(' extened with function b');
+			console.log('extened with function b');
 		}
 
-		console.log(a.fext(b));
-		// a();
+		a = a.concat(b);
+		console.log(a);
+		a.testMethod();
 	</script>
 </body>
